@@ -1,0 +1,85 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Play, Info } from "lucide-react";
+
+export function HeroSection() {
+  return (
+    <section className="relative h-screen w-full overflow-hidden bg-black text-white">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center scale-105"
+        style={{
+          backgroundImage: "url('/hero-bg.jpg')",
+        }}
+      />
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/50" />
+
+      {/* Left Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
+
+      {/* Bottom Gradient */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent" />
+
+      {/* Content */}
+      <div className="relative z-10 flex items-center h-full px-8 md:px-16">
+        <div className="max-w-2xl">
+          {/* Small Label */}
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="uppercase tracking-[0.3em] text-red-600 text-sm font-bold mb-4"
+          >
+            Featured Developer
+          </motion.p>
+
+          {/* Main Title */}
+          <motion.h1
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="text-5xl md:text-7xl font-black leading-none mb-6"
+          >
+            Emmanuel
+            <br />
+            Ambundo
+          </motion.h1>
+
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8"
+          >
+            Full-stack developer crafting scalable digital experiences with
+            React, Node.js, PostgreSQL, and modern UI systems.
+          </motion.p>
+
+          {/* Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="flex flex-wrap gap-4"
+          >
+            {/* Play Button */}
+            <button className="flex items-center gap-2 px-8 py-3 bg-white text-black rounded font-bold hover:bg-gray-200 transition">
+              <Play className="w-5 h-5 fill-black" />
+              View Projects
+            </button>
+
+            {/* More Info */}
+            <button className="flex items-center gap-2 px-8 py-3 bg-white/20 backdrop-blur text-white rounded font-bold hover:bg-white/30 transition">
+              <Info className="w-5 h-5" />
+              More Info
+            </button>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
