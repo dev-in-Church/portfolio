@@ -46,7 +46,7 @@ export function ProjectRow({ title, projects }: ProjectRowProps) {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover"
+              className="h-[80%] w-full object-contain object-center"
             />
 
             {/* Dark Overlay */}

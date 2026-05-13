@@ -3,10 +3,10 @@ export const projectRows = [
     title: "Trending Now",
     projects: [
       {
-        title: "SportTechies POS",
-        slug: "sporttechies-pos",
-        image: "/projects/pj.webp",
-        live: "https://your-demo-link.com",
+        title: "RunnerMKT",
+        slug: "runner-market",
+        image: "/projects/runnermkt.com.webp",
+        live: "https://runnermkt.com",
         github: "https://github.com/yourrepo",
         tech: ["React", "Node.js", "PostgreSQL"],
         description: "Modern POS system for sports businesses.",
@@ -23,13 +23,13 @@ export const projectRows = [
       },
 
       {
-        title: "Netflix Portfolio",
-        slug: "netflix-portfolio",
-        image: "/projects/pj.webp",
-        live: "https://your-demo-link.com",
+        title: "Team Emmanuel",
+        slug: "team-emmanuel",
+        image: "/projects/www.teamemmanuel.org.webp",
+        live: "https://teamemmanuel.org",
         github: "https://github.com/yourrepo",
         tech: ["Next.js", "Framer Motion"],
-        description: "Netflix-inspired developer portfolio.",
+        description: "Sports Charity Initiative Web App.",
       },
     ],
   },
@@ -37,13 +37,13 @@ export const projectRows = [
     title: "Full-Stack Systems",
     projects: [
       {
-        title: "E-Commerce API",
-        slug: "e-c-a",
-        image: "/projects/pj.webp",
-        live: "https://your-demo-link.com",
+        title: "Bobby Interiors",
+        slug: "bobby-furniture-kenya",
+        image: "/projects/www.bobbyfurniturekenya.com.webp",
+        live: "https://bobbyfurniturekenya.com",
         github: "https://github.com/yourrepo",
         tech: ["React", "Node.js", "PostgreSQL"],
-        description: "Modern POS system for sports businesses.",
+        description: "Furniture FullStack Ecommerce",
       },
 
       {
