@@ -1,6 +1,6 @@
 export const projectRows = [
   {
-    title: "Trending Now",
+    title: "Ongoing",
     projects: [
       {
         title: "RunnerMKT",
@@ -13,17 +13,17 @@ export const projectRows = [
       },
 
       {
-        title: "CBC Student Portal",
-        slug: "cbc-portal",
-        image: "/projects/pj.webp",
+        title: "Eldoret Physio",
+        slug: "eldo-physio",
+        image: "/projects/www.eldoretphysio.co.ke.webp",
         live: "https://your-demo-link.com",
         github: "https://github.com/yourrepo",
         tech: ["Next.js", "Express", "PostgreSQL"],
-        description: "CBC-focused student management platform.",
+        description: "Physiotherapy",
       },
 
       {
-        title: "Team Emmanuel",
+        title: "Team Emmanuel Foundation",
         slug: "team-emmanuel",
         image: "/projects/www.teamemmanuel.org.webp",
         live: "https://teamemmanuel.org",
@@ -37,7 +37,7 @@ export const projectRows = [
     title: "Full-Stack Systems",
     projects: [
       {
-        title: "Bobby Interiors",
+        title: "Bobby Furniture Kenya",
         slug: "bobby-furniture-kenya",
         image: "/projects/www.bobbyfurniturekenya.com.webp",
         live: "https://bobbyfurniturekenya.com",
@@ -47,23 +47,23 @@ export const projectRows = [
       },
 
       {
-        title: "Authentication Server",
-        slug: "a-s",
-        image: "/projects/pj.webp",
-        live: "https://your-demo-link.com",
+        title: "Sailex Furnitures",
+        slug: "sailex-furnitures",
+        image: "/projects/www.sailexfurniture.com.webp",
+        live: "https://www.sailexfurniture.com/",
         github: "https://github.com/yourrepo",
         tech: ["Next.js", "Express", "PostgreSQL"],
-        description: "CBC-focused student management platform.",
+        description: "Premium Furniture Store",
       },
 
       {
-        title: "Admin CMS",
+        title: "Aura Express Africa LTD",
         slug: "a-c-m",
-        image: "/projects/pj.webp",
-        live: "https://your-demo-link.com",
+        image: "/projects/www.auraexpressafricaltd.com.webp",
+        live: "https://www.auraexpressafricaltd.com/",
         github: "https://github.com/yourrepo",
         tech: ["Next.js", "Framer Motion"],
-        description: "Netflix-inspired developer portfolio.",
+        description: "Logistics Company Web App",
       },
     ],
   },

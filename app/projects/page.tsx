@@ -20,7 +20,7 @@ export default function ProjectsPage() {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
+              className="w-full h-[80%] group-hover:scale-105 transition duration-300 object-contain object-center"
             />
 
             {/* Overlay */}
