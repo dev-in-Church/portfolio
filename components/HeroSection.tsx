@@ -2,10 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Play, Info } from "lucide-react";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black text-white">
+    <section className="relative h-[80vh] w-full overflow-hidden bg-black text-white">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
@@ -37,7 +38,7 @@ export function HeroSection() {
           </motion.p>
 
           {/* Main Title */}
-          <motion.h1
+          {/* <motion.h1
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -46,7 +47,7 @@ export function HeroSection() {
             Emmanuel
             <br />
             Ambundo
-          </motion.h1>
+          </motion.h1> */}
 
           {/* Description */}
           <motion.p
@@ -55,8 +56,8 @@ export function HeroSection() {
             transition={{ delay: 0.3, duration: 0.7 }}
             className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8"
           >
-            Full-stack developer crafting scalable digital experiences with
-            React, Node.js, PostgreSQL, and modern UI systems.
+            Full-stack software developer crafting scalable digital experiences
+            and modern systems.
           </motion.p>
 
           {/* Buttons */}
@@ -67,16 +68,21 @@ export function HeroSection() {
             className="flex flex-wrap gap-4"
           >
             {/* Play Button */}
-            <button className="flex items-center gap-2 px-8 py-3 bg-white text-black rounded font-bold hover:bg-gray-200 transition">
-              <Play className="w-5 h-5 fill-black" />
-              View Projects
-            </button>
+            <Link href="/projects">
+              <button className="flex items-center cursor-pointer gap-2 px-8 py-3 bg-white text-black rounded font-bold hover:bg-gray-200 transition">
+                <Play className="w-5 h-5 fill-black" />
+                View Projects
+              </button>
+            </Link>
+
+            <Link href="/about">
+              <button className="flex items-center cursor-pointer gap-2 px-8 py-3 bg-white/20 backdrop-blur text-white rounded font-bold hover:bg-white/30 transition">
+                <Info className="w-5 h-5" />
+                More Info
+              </button>
+            </Link>
 
             {/* More Info */}
-            <button className="flex items-center gap-2 px-8 py-3 bg-white/20 backdrop-blur text-white rounded font-bold hover:bg-white/30 transition">
-              <Info className="w-5 h-5" />
-              More Info
-            </button>
           </motion.div>
         </div>
       </div>

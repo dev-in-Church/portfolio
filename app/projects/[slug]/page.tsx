@@ -56,13 +56,15 @@ export default async function ProjectDetailPage({ params }: Props) {
               Live Demo
             </a>
 
-            <a
-              href={project.github}
-              target="_blank"
-              className="px-6 py-3 bg-white/20 rounded font-bold"
-            >
-              GitHub
-            </a>
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                className="px-6 py-3 bg-white/20 rounded font-bold"
+              >
+                GitHub
+              </a>
+            )}
           </div>
         </div>
       </div>

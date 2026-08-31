@@ -7,41 +7,16 @@ export const projectRows = [
         slug: "runner-market",
         image: "/projects/runnermkt.com.webp",
         live: "https://runnermkt.com",
-        github: "https://github.com/yourrepo",
+        github: "",
         tech: ["React", "Node.js", "PostgreSQL"],
         description: "Modern POS system for sports businesses.",
       },
-
-      {
-        title: "Eldoret Physio",
-        slug: "eldo-physio",
-        image: "/projects/www.eldoretphysio.co.ke.webp",
-        live: "https://your-demo-link.com",
-        github: "https://github.com/yourrepo",
-        tech: ["Next.js", "Express", "PostgreSQL"],
-        description: "Physiotherapy",
-      },
-
-      {
-        title: "Team Emmanuel Foundation",
-        slug: "team-emmanuel",
-        image: "/projects/www.teamemmanuel.org.webp",
-        live: "https://teamemmanuel.org",
-        github: "https://github.com/yourrepo",
-        tech: ["Next.js", "Framer Motion"],
-        description: "Sports Charity Initiative Web App.",
-      },
-    ],
-  },
-  {
-    title: "Full-Stack Systems",
-    projects: [
       {
         title: "Bobby Furniture Kenya",
         slug: "bobby-furniture-kenya",
         image: "/projects/www.bobbyfurniturekenya.com.webp",
         live: "https://bobbyfurniturekenya.com",
-        github: "https://github.com/yourrepo",
+        github: "",
         tech: ["React", "Node.js", "PostgreSQL"],
         description: "Furniture FullStack Ecommerce",
       },
@@ -51,9 +26,29 @@ export const projectRows = [
         slug: "sailex-furnitures",
         image: "/projects/www.sailexfurniture.com.webp",
         live: "https://www.sailexfurniture.com/",
-        github: "https://github.com/yourrepo",
+        github: "",
         tech: ["Next.js", "Express", "PostgreSQL"],
         description: "Premium Furniture Store",
+      },
+
+      {
+        title: "Eldoret Physio",
+        slug: "eldo-physio",
+        image: "/projects/www.eldoretphysio.co.ke.webp",
+        live: "https://www.eldoretphysio.co.ke/",
+        github: "",
+        tech: ["Next.js", "Express", "PostgreSQL"],
+        description: "Physiotherapy",
+      },
+
+      {
+        title: "Team Emmanuel Foundation",
+        slug: "team-emmanuel",
+        image: "/projects/www.teamemmanuel.org.webp",
+        live: "https://teamemmanuel.org",
+        github: "",
+        tech: ["Next.js", "Framer Motion"],
+        description: "Sports Charity Initiative Web App.",
       },
 
       {
@@ -61,12 +56,46 @@ export const projectRows = [
         slug: "a-c-m",
         image: "/projects/www.auraexpressafricaltd.com.webp",
         live: "https://www.auraexpressafricaltd.com/",
-        github: "https://github.com/yourrepo",
+        github: "",
         tech: ["Next.js", "Framer Motion"],
         description: "Logistics Company Web App",
       },
     ],
   },
+  // {
+  //   title: "Full-Stack Systems",
+  //   projects: [
+  //     {
+  //       title: "Bobby Furniture Kenya",
+  //       slug: "bobby-furniture-kenya",
+  //       image: "/projects/www.bobbyfurniturekenya.com.webp",
+  //       live: "https://bobbyfurniturekenya.com",
+  //       github: "",
+  //       tech: ["React", "Node.js", "PostgreSQL"],
+  //       description: "Furniture FullStack Ecommerce",
+  //     },
+
+  //     {
+  //       title: "Sailex Furnitures",
+  //       slug: "sailex-furnitures",
+  //       image: "/projects/www.sailexfurniture.com.webp",
+  //       live: "https://www.sailexfurniture.com/",
+  //       github: "",
+  //       tech: ["Next.js", "Express", "PostgreSQL"],
+  //       description: "Premium Furniture Store",
+  //     },
+
+  //     {
+  //       title: "Aura Express Africa LTD",
+  //       slug: "a-c-m",
+  //       image: "/projects/www.auraexpressafricaltd.com.webp",
+  //       live: "https://www.auraexpressafricaltd.com/",
+  //       github: "",
+  //       tech: ["Next.js", "Framer Motion"],
+  //       description: "Logistics Company Web App",
+  //     },
+  //   ],
+  // },
 
   // {
   //   title: "Full-Stack Systems",

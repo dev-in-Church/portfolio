@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 import ClientLayout from "@/components/ClientLayout";
 
@@ -20,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${geist.className} bg-black text-white antialiased`}>
-        <ClientLayout>{children}</ClientLayout>
+        {/* <Navbar /> */}
 
+        <ClientLayout>{children}</ClientLayout>
+        {/* <Footer /> */}
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
