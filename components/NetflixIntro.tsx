@@ -114,7 +114,7 @@ export function NetflixIntro({ onFinish }: { onFinish: () => void }) {
       </div>
 
       {/* Fade so the scattered images don't overpower the centerpiece */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/90" />
+      {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/50" /> */}
 
       {/* Centerpiece */}
       <div className="relative animate-pulse">
