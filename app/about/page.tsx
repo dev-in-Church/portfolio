@@ -65,9 +65,9 @@ export default function AboutPage() {
         {/* GIF — desktop only, sits beside the XP card */}
         <div className="hidden sm:flex sm:row-start-3 sm:col-start-1 items-center justify-center">
           <img
-            src="/xp.webp"
+            src="/me.webp"
             alt=""
-            className="w-28 h-28 rounded-2xl object-cover"
+            className="h-28 rounded-2xl object-cover"
           />
         </div>
 

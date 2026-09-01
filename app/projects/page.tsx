@@ -100,27 +100,48 @@ export default function ProjectsPage() {
       />
 
       <div className="relative max-w-7xl mx-auto">
-        <h1 className="text-4xl font-black">Projects</h1>
-        <p className="mt-2 text-gray-400">
-          {projects.length} project{projects.length !== 1 ? "s" : ""}
-          {active !== "All" ? ` in ${active}` : ""}
-        </p>
+        {/* Header row — title + category filters on the left, GIF on the right */}
+        <div className="flex items-start justify-between gap-6">
+          <div>
+            {/* <h1 className="text-4xl font-black">Projects</h1>
+            <p className="mt-2 text-gray-400">
+              {projects.length} project{projects.length !== 1 ? "s" : ""}
+              {active !== "All" ? ` in ${active}` : ""}
+            </p> */}
+            <img
+              src="/job.webp"
+              alt=""
+              className="hidden sm:block w-24 h-24 md:w-32 md:h-32 rounded-2xl object-cover shrink-0"
+            />
+            {/* Category filter */}
+            {/* <div className="mt-8 flex flex-wrap gap-2">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setActive(category)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors duration-200 ${
+                    active === category
+                      ? "bg-red-600 border-red-600 text-white"
+                      : "bg-white/5 border-white/10 text-gray-300 hover:border-white/30"
+                  }`}
+                >
+                  {category}
+                </button>
+              ))}
+            </div> */}
+          </div>
 
-        {/* Category filter */}
-        <div className="mt-8 flex flex-wrap gap-2">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActive(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors duration-200 ${
-                active === category
-                  ? "bg-red-600 border-red-600 text-white"
-                  : "bg-white/5 border-white/10 text-gray-300 hover:border-white/30"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
+          {/* GIF */}
+          <img
+            src="/work.webp"
+            alt=""
+            className="hidden sm:block w-24 h-24 md:w-32 md:h-32 rounded-2xl object-cover shrink-0"
+          />
+          <img
+            src="/gym.webp"
+            alt=""
+            className="hidden sm:block w-24 h-24 md:w-32 md:h-32 rounded-2xl object-cover shrink-0"
+          />
         </div>
 
         {/* Grid */}

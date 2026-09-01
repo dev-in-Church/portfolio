@@ -31,6 +31,7 @@ const galleryImages: string[] = [
   "/gallery/10.jpg",
   "/gallery/21.jpg",
   "/gallery/17.jpg",
+  "/gallery/30.jpg",
 ];
 
 // Cycled aspect ratios so images vary in size instead of all sharing the same box
