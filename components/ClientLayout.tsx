@@ -20,19 +20,35 @@ export default function ClientLayout({
     setPhase(hasStarted === "true" ? "app" : "gate");
   }, []);
 
+  // Preload the intro sound as soon as the gate screen shows, so it's
+  // already buffered by the time the user clicks — otherwise play() has
+  // to wait on a fresh network fetch, which is what caused the delay
+  // (especially noticeable on the deployed, non-localhost connection).
+  useEffect(() => {
+    if (phase !== "gate") return;
+
+    const audio = new Audio("/sounds/clap.wav");
+    audio.preload = "auto";
+    audio.load();
+    audioRef.current = audio;
+  }, [phase]);
+
   const startExperience = () => {
     sessionStorage.setItem("started", "true");
     setPhase("intro");
 
-    // Created + played directly inside this click handler so it's tied to
-    // a real user gesture — this is the ONLY place that should ever call
-    // play(). Doing it anywhere else (a mounted effect, a different
-    // component) loses that gesture context and gets silently blocked.
-    const audio = new Audio("/sounds/clap.wav");
-    audioRef.current = audio;
-    audio.play().catch((e) => {
-      console.error("Audio play failed:", e);
-    });
+    // Play the already-preloaded audio instance instead of creating a new
+    // Audio() here — creating it fresh at click time is what forced the
+    // browser to start downloading from zero, causing the sound to lag
+    // behind the visuals. Still called directly inside this click handler
+    // so it stays tied to the user gesture.
+    const audio = audioRef.current;
+    if (audio) {
+      audio.currentTime = 0;
+      audio.play().catch((e) => {
+        console.error("Audio play failed:", e);
+      });
+    }
   };
 
   const finishIntro = useCallback(() => {
