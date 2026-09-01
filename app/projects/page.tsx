@@ -111,7 +111,7 @@ export default function ProjectsPage() {
             <img
               src="/job.webp"
               alt=""
-              className="hidden sm:block w-24 h-24 md:w-32 md:h-32 rounded-2xl object-cover shrink-0"
+              className="w-24 h-24 md:w-32 md:h-32 rounded-2xl object-cover shrink-0"
             />
             {/* Category filter */}
             {/* <div className="mt-8 flex flex-wrap gap-2">
@@ -135,7 +135,7 @@ export default function ProjectsPage() {
           <img
             src="/work.webp"
             alt=""
-            className="hidden sm:block w-24 h-24 md:w-32 md:h-32 rounded-2xl object-cover shrink-0"
+            className="w-24 h-24 md:w-32 md:h-32 rounded-2xl object-cover shrink-0"
           />
           <img
             src="/gym.webp"
