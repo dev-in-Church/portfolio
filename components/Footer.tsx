@@ -29,7 +29,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-8 py-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
         {/* Identity */}
         <div>
-          <p className="px-8 py-5 text-xs text-gray-600">
+          <p className="text-gray-600">
             © {new Date().getFullYear()} Emmanuel Ambundo. All rights reserved.
           </p>
         </div>

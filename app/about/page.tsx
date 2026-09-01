@@ -44,11 +44,11 @@ export default function AboutPage() {
         <img
           src="/pfp.jpg"
           alt="Emmanuel Ambundo"
-          className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover shrink-0"
+          className="sm:row-start-1 w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover shrink-0"
         />
 
         {/* Identity */}
-        <div>
+        <div className="sm:row-start-1">
           <h1 className="text-3xl font-black leading-tight">
             Emmanuel Ambundo
           </h1>
@@ -56,15 +56,24 @@ export default function AboutPage() {
         </div>
 
         {/* Bio — spans both columns on sm+ */}
-        <p className="sm:col-start-2 text-gray-300 text-lg leading-relaxed max-w-[65ch]">
+        <p className="sm:row-start-2 sm:col-start-2 text-gray-300 text-lg leading-relaxed max-w-[65ch]">
           Full-Stack Developer specializing in the PERN stack. I build scalable,
           fast, and modern web applications with a strong focus on UX,
           performance, and clean architecture.
         </p>
 
+        {/* GIF — desktop only, sits beside the XP card */}
+        <div className="hidden sm:flex sm:row-start-3 sm:col-start-1 items-center justify-center">
+          <img
+            src="/xp.webp"
+            alt=""
+            className="w-28 h-28 rounded-2xl object-cover"
+          />
+        </div>
+
         {/* Currently building at */}
-        <div className="sm:col-start-2 w-full">
-          <h2 className="text-sm text-gray-500 mb-3">XP</h2>
+        <div className="sm:row-start-3 sm:col-start-2 w-full">
+          <h2 className="text-sm text-gray-500 mb-3">XP: Tech Lead@ </h2>
 
           <a
             href="https://www.sporttechies.com/"
@@ -81,7 +90,7 @@ export default function AboutPage() {
         </div>
 
         {/* Skills */}
-        <div className="sm:col-start-2 flex flex-wrap gap-3">
+        <div className="sm:row-start-4 sm:col-start-2 flex flex-wrap gap-3">
           {skills.map(({ name, Icon, color }) => (
             <span
               key={name}

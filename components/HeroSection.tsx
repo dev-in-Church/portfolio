@@ -7,13 +7,25 @@ import Link from "next/link";
 export function HeroSection() {
   return (
     <section className="relative h-[80vh] w-full overflow-hidden bg-black text-white">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{
-          backgroundImage: "url('/hero-bg.jpg')",
-        }}
+      {/* Background Video — all screen sizes */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/hero.mp4"
+        poster="/hero-bg.jpg"
+        autoPlay
+        muted
+        loop
+        playsInline
       />
+
+      {/* Right-side GIF — desktop only */}
+      <div className="hidden lg:block absolute right-0 bottom-0 h-full w-[45%]">
+        <img
+          src="/welcome2.webp"
+          alt=""
+          className="h-full w-full object-contain object-bottom"
+        />
+      </div>
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50" />
@@ -37,18 +49,6 @@ export function HeroSection() {
             Featured Developer
           </motion.p>
 
-          {/* Main Title */}
-          {/* <motion.h1
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="text-5xl md:text-7xl font-black leading-none mb-6"
-          >
-            Emmanuel
-            <br />
-            Ambundo
-          </motion.h1> */}
-
           {/* Description */}
           <motion.p
             initial={{ opacity: 0 }}
@@ -69,20 +69,18 @@ export function HeroSection() {
           >
             {/* Play Button */}
             <Link href="/projects">
-              <button className="flex items-center cursor-pointer gap-2 px-8 py-3 bg-white text-black rounded font-bold hover:bg-gray-200 transition">
+              <button className="flex items-center cursor-pointer gap-2 px-4 py-3 bg-white text-black rounded font-bold hover:bg-gray-200 transition">
                 <Play className="w-5 h-5 fill-black" />
                 View Projects
               </button>
             </Link>
 
             <Link href="/about">
-              <button className="flex items-center cursor-pointer gap-2 px-8 py-3 bg-white/20 backdrop-blur text-white rounded font-bold hover:bg-white/30 transition">
+              <button className="flex items-center cursor-pointer gap-2 px-4 py-3 bg-white/20 backdrop-blur text-white rounded font-bold hover:bg-white/30 transition">
                 <Info className="w-5 h-5" />
                 More Info
               </button>
             </Link>
-
-            {/* More Info */}
           </motion.div>
         </div>
       </div>
