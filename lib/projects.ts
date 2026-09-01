@@ -1,6 +1,6 @@
 export const projectRows = [
   {
-    title: "Ongoing",
+    title: "Notable",
     projects: [
       {
         title: "RunnerMKT",
