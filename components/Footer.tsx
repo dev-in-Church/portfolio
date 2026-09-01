@@ -3,7 +3,7 @@ import { Mail, Linkedin } from "lucide-react";
 import { SiGithub, SiInstagram } from "react-icons/si";
 
 const socials = [
-  { name: "GitHub", Icon: SiGithub, href: "https://github.com/dev-in-Church" },
+  { name: "GitHub", Icon: SiGithub, href: "https://github.com/undo-ke" },
   {
     name: "LinkedIn",
     Icon: Linkedin,

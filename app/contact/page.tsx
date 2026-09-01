@@ -25,7 +25,7 @@ export default function ContactPage() {
     {
       name: "GitHub",
       Icon: SiGithub,
-      href: "https://github.com/dev-in-Church",
+      href: "https://github.com/undo-ke",
       label: "UNDO",
     },
     {
