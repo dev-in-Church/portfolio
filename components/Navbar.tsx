@@ -42,12 +42,8 @@ export function Navbar() {
     >
       <div className="flex items-center justify-between px-6 md:px-8 py-4 text-white">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-red-600 font-black text-2xl tracking-widest"
-          onClick={() => setMobileOpen(false)}
-        >
-          UNDO
+        <Link href="/" className="" onClick={() => setMobileOpen(false)}>
+          <img src="/logo.png" alt="" className="h-10" />
         </Link>
 
         {/* Nav Links (desktop) */}

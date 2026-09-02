@@ -3,9 +3,9 @@
 import { useEffect, useMemo, useState } from "react";
 
 const galleryImages: string[] = [
-  "/gallery/1.jpeg",
+  "/gallery/34.jpg",
   "/gallery/6.jpg",
-  "/gallery/15.jpg",
+  "/gallery/29.jpg",
   "/gallery/24.jpg",
   "/gallery/7.jpg",
   "/gallery/12.jpg",
@@ -16,7 +16,7 @@ const galleryImages: string[] = [
   "/gallery/19.jpg",
   "/gallery/2.jpeg",
   "/gallery/14.jpg",
-  "/gallery/29.jpg",
+  "/gallery/33.jpg",
   "/gallery/5.jpg",
   "/gallery/28.jpg",
   "/gallery/13.jpg",
@@ -32,6 +32,12 @@ const galleryImages: string[] = [
   "/gallery/21.jpg",
   "/gallery/17.jpg",
   "/gallery/30.jpg",
+  "/gallery/31.png",
+  "/gallery/32.jpg",
+  "/gallery/15.jpg",
+  "/gallery/35.jpg",
+  "/gallery/36.jpg",
+  "/gallery/37.jpg",
 ];
 
 // Cycled aspect ratios so images vary in size instead of all sharing the same box

@@ -42,7 +42,7 @@ export default function AboutPage() {
       <div className="relative max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-8 sm:gap-10 items-start">
         {/* Photo */}
         <img
-          src="/pfp.jpg"
+          src="/lg_white.png"
           alt="Emmanuel Ambundo"
           className="sm:row-start-1 w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover shrink-0"
         />
