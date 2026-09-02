@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X, Laugh } from "lucide-react";
+import { Menu, X, Laugh, Home, Laptop, PhoneCall, User2 } from "lucide-react";
 
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Projects", href: "/projects" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Home", href: "/", icon: Home },
+  { name: "Projects", href: "/projects", icon: Laptop },
+  { name: "Me", href: "/about", icon: User2 },
+  { name: "Connect", href: "/contact", icon: PhoneCall },
 ];
 
 export function Navbar() {
@@ -47,16 +47,22 @@ export function Navbar() {
         </Link>
 
         {/* Nav Links (desktop) */}
-        <nav className="hidden md:flex gap-6 text-sm text-gray-300">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="hover:text-white transition-colors duration-200"
-            >
-              {link.name}
-            </Link>
-          ))}
+        <nav className="hidden md:flex gap-10 text-sm text-gray-300">
+          {navLinks.map((link) => {
+            // 1. Assign the component to a Capitalized variable
+            const IconComponent = link.icon;
+
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="flex items-center gap-2 hover:text-white transition-colors duration-200"
+              >
+                <IconComponent className="w-4 h-4" />
+                {/* <span>{link.name}</span> */}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Right side */}
@@ -92,16 +98,21 @@ export function Navbar() {
         }`}
       >
         <nav className="flex flex-col gap-1 px-6 pb-6 pt-2 text-gray-300">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="py-3 border-b border-white/5 text-base hover:text-white transition-colors duration-200"
-            >
-              {link.name}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const IconComponent = link.icon;
+
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="flex items-center gap-3 py-3 border-b border-white/5 text-base hover:text-white transition-colors duration-200"
+              >
+                {IconComponent && <IconComponent className="w-5 h-5" />}
+                <span>{link.name}</span>
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </header>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Play, Info } from "lucide-react";
+import { Play, Info, Laptop } from "lucide-react";
 import Link from "next/link";
 
 export function HeroSection() {
@@ -56,8 +56,7 @@ export function HeroSection() {
             transition={{ delay: 0.3, duration: 0.7 }}
             className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8"
           >
-            Full-stack software developer crafting scalable digital experiences
-            and modern systems.
+            Full-stack digital experiences and modern systems.
           </motion.p>
 
           {/* Buttons */}
@@ -70,7 +69,7 @@ export function HeroSection() {
             {/* Play Button */}
             <Link href="/projects">
               <button className="flex items-center cursor-pointer gap-2 px-4 py-3 bg-white text-black rounded font-bold hover:bg-gray-200 transition">
-                <Play className="w-5 h-5 fill-black" />
+                <Laptop className="w-5 h-5" />
                 View Projects
               </button>
             </Link>

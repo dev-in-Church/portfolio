@@ -9,7 +9,7 @@ export const projectRows = [
         live: "https://runnermkt.com",
         github: "",
         tech: ["React", "Node.js", "PostgreSQL"],
-        description: "Modern POS system for sports businesses.",
+        description: "Multi-vendor Sports Marketplace.",
       },
       {
         title: "Bobby Furniture Kenya",

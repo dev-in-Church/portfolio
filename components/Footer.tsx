@@ -26,16 +26,16 @@ const navLinks = [
 export function Footer() {
   return (
     <footer className="bg-black text-gray-500 text-sm border-t border-white/10">
-      <div className="max-w-6xl mx-auto px-8 py-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+      <div className="max-w-6xl mx-auto px-8 py-10 flex md:items-center justify-between gap-8">
         {/* Identity */}
-        <div>
+        {/* <div>
           <p className="text-gray-600">
             © {new Date().getFullYear()} Emmanuel Ambundo. All rights reserved.
           </p>
-        </div>
+        </div> */}
 
         {/* Nav links */}
-        <nav className="flex gap-6">
+        {/* <nav className="flex gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -45,7 +45,9 @@ export function Footer() {
               {link.name}
             </Link>
           ))}
-        </nav>
+        </nav> */}
+
+        <img src="/logo.png" alt="" className="h-8 invert-50 brightness-0" />
 
         {/* Social icons */}
         <div className="flex gap-3">
