@@ -88,12 +88,7 @@ export default function ClientLayout({
         />
 
         <div className="relative flex flex-col items-center text-center px-6">
-          <p className="text-sm tracking-wide text-gray-400 mb-3">
-            Emmanuel Ambundo
-          </p>
-          <h1 className="text-2xl md:text-3xl font-black mb-8">
-            Full-Stack Developer Portfolio
-          </h1>
+          <img src="/click-here.webp" alt="" />
 
           <button
             onClick={startExperience}
