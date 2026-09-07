@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { NetflixIntro } from "@/components/NetflixIntro";
+import { MusicToggle } from "@/components/MusicToggle";
 
 type Phase = "loading" | "gate" | "intro" | "app";
 
@@ -87,17 +88,16 @@ export default function ClientLayout({
         />
 
         <div className="relative flex flex-col items-center text-center px-6">
-          {/* <p className="text-sm tracking-wide text-gray-400 mb-3">
+          <p className="text-sm tracking-wide text-gray-400 mb-3">
             Emmanuel Ambundo
           </p>
           <h1 className="text-2xl md:text-3xl font-black mb-8">
             Full-Stack Developer Portfolio
-          </h1> */}
-          <img src="/click-here.webp" alt="" />
+          </h1>
 
           <button
             onClick={startExperience}
-            className="px-6 py-3 bg-black hover:bg-gray-700 shadow-sm shadow-primary cursor-pointer rounded-lg font-bold text-lg transition-colors duration-200"
+            className="px-6 py-3 bg-red-600 hover:bg-red-500 rounded-lg font-bold text-lg transition-colors duration-200"
           >
             Enter Portfolio
           </button>
@@ -117,6 +117,9 @@ export default function ClientLayout({
       <Navbar />
       <main>{children}</main>
       <Footer />
+      <MusicToggle youtubeUrl="https://www.youtube.com/watch?v=6pw1OEUoq-I&list=RD6pw1OEUoq-I" />
     </>
   );
 }
+
+// https://www.youtube.com/watch?v=dQw4w9WgXcQ
