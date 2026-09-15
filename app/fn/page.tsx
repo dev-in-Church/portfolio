@@ -7,7 +7,7 @@ const galleryImages: string[] = [
   "/gallery/6.jpg",
   "/gallery/29.jpg",
   "/gallery/24.jpg",
-  "/gallery/7.jpg",
+  "/gallery/35.jpg",
   "/gallery/12.jpg",
   "/gallery/16.jpg",
   "/gallery/27.jpg",
@@ -35,12 +35,13 @@ const galleryImages: string[] = [
   "/gallery/31.png",
   "/gallery/32.jpg",
   "/gallery/15.jpg",
-  "/gallery/35.jpg",
+  "/gallery/7.jpg",
   "/gallery/36.jpg",
   "/gallery/37.jpg",
   "/gallery/46.jpg",
   "/gallery/41.jpg",
   "/gallery/38.jpg",
+  "/gallery/47.png",
 ];
 
 // Cycled aspect ratios so images vary in size instead of all sharing the same box
