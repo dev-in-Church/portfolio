@@ -8,7 +8,11 @@ const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Emmanuel | Software Developer",
-  description: "Software Dev Portfolio experience",
+  description:
+    "Emmanuel is a software developer building modern, responsive web applications and digital solutions for businesses and organizations.",
+  icons: {
+    icon: "/lg_white.png",
+  },
 };
 
 export default function RootLayout({

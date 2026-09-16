@@ -19,11 +19,11 @@ export function HeroSection() {
       />
 
       {/* Right-side GIF — desktop only */}
-      <div className="hidden lg:block absolute right-0 bottom-0 h-full w-[45%]">
+      <div className="hidden lg:flex absolute right-0 bottom-0 h-full w-[45%] items-center">
         <img
-          src="/welcome2.webp"
+          src="/welcome3.webp"
           alt=""
-          className="h-full w-full object-contain object-bottom"
+          className="h-[60%] w-[60%] object-contain object-bottom"
         />
       </div>
 
