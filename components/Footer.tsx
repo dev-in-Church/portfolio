@@ -9,11 +9,11 @@ const socials = [
     Icon: Linkedin,
     href: "https://www.linkedin.com/in/emmanuel-ambundo-b0130535b/",
   },
-  {
-    name: "Instagram",
-    Icon: SiInstagram,
-    href: "https://www.instagram.com/emmanuel_sporttechies",
-  },
+  // {
+  //   name: "Instagram",
+  //   Icon: SiInstagram,
+  //   href: "https://www.instagram.com/emmanuel_sporttechies",
+  // },
   { name: "Email", Icon: Mail, href: "mailto:undo19727@gmail.com" },
 ];
 

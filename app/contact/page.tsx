@@ -34,12 +34,12 @@ export default function ContactPage() {
       href: "https://www.linkedin.com/in/emmanuel-ambundo-b0130535b/",
       label: "Emmanuel Ambundo",
     },
-    {
-      name: "Instagram",
-      Icon: SiInstagram,
-      href: "https://instagram.com/emmanuel_sporttechies",
-      label: "@emmanuel_sporttechies",
-    },
+    // {
+    //   name: "Instagram",
+    //   Icon: SiInstagram,
+    //   href: "https://instagram.com/emmanuel_sporttechies",
+    //   label: "@emmanuel_sporttechies",
+    // },
   ];
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
